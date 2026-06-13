@@ -1,0 +1,32 @@
+print('Welcome to Asmaa assigment, please input your name below')
+yourname= input ('>')
+print('Hello, '+yourname)
+#assignment 1. Sum it up: Write a loop that calculates the sum of numbers from 1 to 100. 
+number= 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+total = 0
+for number in range(1, 101):
+    total = total + number
+print(total)
+
+#2. Count evens: Print all even numbers between 1 and 50 using a `for` loop.
+#mumber %2==0 =even
+for number in range(1, 51):
+    if number % 2 == 0:  
+      print(number)
+        
+#3. Reverse it: Take a number like 12345 and print it backwards using a `while` loop
+number = 12345
+reversed_num = 0
+while number > 0:
+    digit = number % 10       
+    reversed_num = reversed_num * 10 + digit   
+    number = number // 10     
+print("Reversed number:", reversed_num)
+
+
+#4. Star pattern: Print triangle using nested loops. This is loop inside another loop using rows outside and insude
+rows = 7
+for row in range(1, 7):  
+    for star in range(row):
+        print("*", end="")  
+    print()  
